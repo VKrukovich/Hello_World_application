@@ -1,0 +1,54 @@
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+    <meta name="description" content="Hello World application PHP">
+    <meta name="keywords" content="application, PHP">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <title>Hello World application</title>
+</head>
+<body>
+    <main>
+    <article  class="col-md-6 col-md-offset-3">
+        <h1>Welcome to the Hello World application!</h1>
+        <h2>Fill the fields of form to know more.</h2>
+    </article>
+    </main>
+
+    <article class="col-md-6 col-md-offset-3">
+        <form method="post" action="index.php" enctype="multipart/form-data">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="input-contact">
+                        <input type="text" name="username" id="username" required pattern="[^[a-zA-Z]+$]">
+                        <span>USERNAME</span>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="input-contact">
+                        <input type="number" name="number" min="1" step="1" id="number" required>
+                        <span>NUMBER</span>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="input-contact">
+                        <input type="number" min="1" max="12" step="1" name="monthnum" id="monthnum" required>
+                        <span>MONTHNUM</span>
+                    </div>
+                </div>
+                <div class="col-md-12">
+                    <button class="btn btn-box" value="sub" type="submit" name="sub" id="sub">Submit</button>
+                </div>
+            </div>
+        </form>
+    </article>
+</body>
+</html>
+
+
+
+
+
